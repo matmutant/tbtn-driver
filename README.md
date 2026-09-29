@@ -34,8 +34,32 @@ if you want to remove:
 ```
 sudo rmmod tbtn_driver.ko
 ```
+### autoload 
+prepare directory and copy made module
+```
+sudo mkdir -p /lib/modules/$(uname -r)/extra
+```
+```
+sudo cp tbtn_driver.ko /lib/modules/$(uname -r)/extra/
+```
+refresh module index:
+```
+sudo depmod -a
+```
+test module loading:
+```
+sudo modprobe tbtn_driver
+```
+add conf 
+```
+sudo vim /etc/modules-load.d/tbtn.conf
+[i]
+tbtn_driver
+[esc] :wq
+```
 
-### installation
+
+### alternative installation
 
 ```
 make install
