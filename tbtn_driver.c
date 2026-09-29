@@ -5,7 +5,7 @@
 #include <linux/input/sparse-keymap.h>
 
 static const struct acpi_device_id tbtn_device_ids[] = {
-    {"MAT002A", 0}, // 0x2A003434
+    {"MAT0035", 0}, // 0x2A003434
     {"MAT002B", 0}, // 0x2B003434
     {"", 0},
 };
