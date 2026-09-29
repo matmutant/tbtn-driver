@@ -1,5 +1,20 @@
 # tbtn-driver
 
+## FZ-M1 specific adaptation
+### How Button A is seen by X
+```
+Button A keypress
+↓
+ACPI MAT0035 event
+↓
+[tbtn driver]
+↓
+KEY-PROG1 (Linux Code 148)
+↓
+XF86Launch1 (X11 keycode 156)
+```
+
+
 ## How to install
 
 ```
